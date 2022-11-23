@@ -38,9 +38,8 @@ for i in range(1,21,2):
 print('\n')
 
 #Упражнение 4.7
-for i in range(3,30):
-    if i%3==0:
-        print(i)
+for i in range(3,30,3):
+    print(i)
 print('\n')
 
 #Упражнение 4.8
