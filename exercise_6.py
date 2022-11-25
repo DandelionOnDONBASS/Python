@@ -353,3 +353,60 @@ for k,v in keys.items():
     for val in v:
         print(f'\t{val}')
 
+#Упражнение 6.11
+cities = {
+    'Kyev':{
+        'country':'Ukraine',
+        'population': 2400000,
+        'fakt':'BEST CITY',
+        },
+    'Bad buhay':{
+        'country':'Germany',
+        'population': 400000,
+        'fakt':'Myny farms',
+        },
+    'Paris':{
+        'country':'France',
+        'population': 2500000,
+        'fakt':'Beautiful',
+        },
+    }
+for city, value in cities.items():
+    print(city)
+    print(f'\t Country: {value["country"]}')
+    print(f'\t Population :{value["population"]}')
+    print(f'\t Fakt about thic citi: {value["fakt"]}')
+
+#Упражнение 6.12
+cities = {
+    'Kyev':{
+        'country':'Ukraine',
+        'population': 2400000,
+        'fakt':'BEST CITY',
+        },
+    'Bad buhay':{
+        'country':'Germany',
+        'population': 400000,
+        'fakt':'Myny farms',
+        },
+    'Paris':{
+        'country':'France',
+        'population': 2500000,
+        'fakt':'Beautiful',
+        },
+    }
+for city, value in cities.items():
+    print(city,value)
+    if city =="Kyev":
+        value['Presedent'] = 'Zelensky'
+    elif city =="Bad buhay":
+        value['Presedent'] = 'Frank-Walter Steinmeier'
+    else:
+        value['Presedent'] = 'Emmanuel Macron'
+for city, value in cities.items():
+    print(city)
+    print(f'\t Country: {value["country"]}')
+    print(f'\t Population :{value["population"]}')
+    print(f'\t Fakt about thic citi: {value["fakt"]}')
+    print(f'\t Presedent : {value["Presedent"]}')
+
