@@ -274,7 +274,19 @@ user_profile = build_profile('albert', 'einstein',34,'man',
                             location='princeton',
                             field='physics')
 for k,v in user_profile.items():
-    print(k,v)
+    print(f'{k} is {v}')
+print('\n')
+#Упражнение 8.14
+def make_car(mark,back, **car_info):
+    car_info['mark']= mark
+    car_info['back'] = back
+    return car_info
+car = make_car('subaru','outback',color = 'blue', tow_package = True)
+for k,v in car.items():
+    print(f'{k} - {v}')
+
+
+
 
 
 
