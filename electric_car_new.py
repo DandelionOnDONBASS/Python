@@ -25,3 +25,12 @@ class ElectricCar(Car):
         """
         super().__init__(make, model, year)
         self.battery = Battery()
+
+new_car = ElectricCar('tesla','as34',2012)
+print(new_car.get_descriptive_name())
+new_car.read_odometer()
+new_car.increment_odometer(56)
+new_car.read_odometer()
+new_car.battery.get_range()
+
+
